@@ -1,6 +1,5 @@
 ﻿using System.Windows;
 using System.Windows.Documents;
-
 using Engine.EventArgs;
 using Engine.ViewModels;
 namespace WPFUI
@@ -41,13 +40,6 @@ namespace WPFUI
         {
             GameMessages.Document.Blocks.Add(new Paragraph(new Run(e.Message)));
             GameMessages.ScrollToEnd();
-        }
-        private void OnClick_DisplayTradeScreen(object sender, RoutedEventArgs e)
-        {
-            TradeScreen tradeScreen = new TradeScreen();
-            tradeScreen.Owner = this;
-            tradeScreen.DataContext = _gameSession;
-            tradeScreen.ShowDialog();
         }
     }
 }

@@ -17,12 +17,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="NewFolder\**" />
-    <EmbeddedResource Remove="NewFolder\**" />
-    <None Remove="NewFolder\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="Images\Locations\FarmFields.png" />
     <None Remove="Images\Locations\Farmhouse.png" />
     <None Remove="Images\Locations\HerbalistsGarden.png" />
@@ -35,6 +29,10 @@
     <None Remove="Images\Locations\TownGate.png" />
     <None Remove="Images\Locations\TownSquare.png" />
     <None Remove="Images\Locations\Trader.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
   </ItemGroup>
 
   <ItemGroup>
